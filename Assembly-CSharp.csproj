@@ -60,9 +60,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Platform.cs" />
-    <Compile Include="Assets\PlatformGenerator.cs" />
+    <Compile Include="Assets\Scripts\BackgroundMusic.cs" />
+    <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GenerateColliders.cs" />
+    <Compile Include="Assets\Scripts\JoodlerMovement.cs" />
+    <Compile Include="Assets\Scripts\JoodlerTilting.cs" />
+    <Compile Include="Assets\Scripts\MenuManager.cs" />
+    <Compile Include="Assets\Scripts\Platform.cs" />
+    <Compile Include="Assets\Scripts\PlatformGenerator.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/Dateien/Tom/UnityProjects/JoodleDump/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
