@@ -8,29 +8,66 @@ public class JoodlerMovement : MonoBehaviour
 
     float jumpForce = 10f;
 
-    // Start is called before the first frame update
+    Vector3 border;
+
+    AudioSource audiosource;
+    public AudioClip[] jumpSounds;
+
+    Animator anim;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        anim = GetComponent<Animator>();
+
+        audiosource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
 
         //tilting
-        transform.Translate(Input.acceleration.x, 0, 0);
+#if UNITY_EDITOR
+
+        var move = new Vector3(Input.GetAxis("Horizontal"),0,0);
+        transform.position += move * 5 * Time.deltaTime;
+
+#elif UNITY_ANDROID
         
+        transform.Translate(Input.acceleration.x, 0, 0);
+
+#endif     
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //jumping
         if (other.gameObject.tag == "platform" && rb.velocity.y < 0)
         {
 
             Vector2 velocity = rb.velocity;
             velocity.y = jumpForce;
             rb.velocity = velocity;
+
+            anim.SetTrigger("jump");
+            audiosource.clip = jumpSounds[Random.Range(0, jumpSounds.Length)];
+            audiosource.Play();
+        }
+
+        //border teleport
+        else if (other.gameObject.tag == "border")
+        {
+            float x;
+            if (transform.position.x > 0)
+            {
+                x = .1f;
+            }
+            else
+            {
+                x = -.1f;
+            }
+            transform.position = new Vector3(-transform.position.x+x, transform.position.y);
         }
     }
 

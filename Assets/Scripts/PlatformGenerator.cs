@@ -8,12 +8,6 @@ public class PlatformGenerator : MonoBehaviour
     float timer=0;
 
     public GameObject platform;
-
-    void Start()
-    {
-        
-    }
-
     
     void Update()
     {

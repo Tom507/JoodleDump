@@ -6,6 +6,7 @@ public class BackgroundMusic : MonoBehaviour
 {
     static BackgroundMusic instance;
 
+    //play music even if scene changes
     private void Awake()
     {
         if (instance != null)
