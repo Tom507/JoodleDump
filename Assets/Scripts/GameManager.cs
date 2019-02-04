@@ -1,25 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject cam;
     public GameObject joodler;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
+        //end game if player falls
         if (joodler.transform.position.y + 5 < cam.transform.position.y)
         {
-            Debug.Log("looser");
 
+            SceneManager.LoadScene("MainScene");
 
         }
     }
