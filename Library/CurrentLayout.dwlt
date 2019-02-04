@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1600
     height: 817
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -113,11 +113,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 498}
   m_MaxSize: {x: 22012, y: 14048}
   vertical: 1
-<<<<<<< HEAD:Joodle Dump/Library/CurrentLayout.dwlt
-  controlID: 91
-=======
-  controlID: 125
->>>>>>> efc386c9ef15ee2e63bd8bd924b6ea38653f2122:Library/CurrentLayout.dwlt
+  controlID: 2088
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,11 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 498}
   m_MaxSize: {x: 22012, y: 14048}
   vertical: 0
-<<<<<<< HEAD:Joodle Dump/Library/CurrentLayout.dwlt
-  controlID: 92
-=======
-  controlID: 126
->>>>>>> efc386c9ef15ee2e63bd8bd924b6ea38653f2122:Library/CurrentLayout.dwlt
+  controlID: 2089
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,11 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 348}
   m_MaxSize: {x: 8006, y: 8048}
   vertical: 1
-<<<<<<< HEAD:Joodle Dump/Library/CurrentLayout.dwlt
-  controlID: 93
-=======
-  controlID: 127
->>>>>>> efc386c9ef15ee2e63bd8bd924b6ea38653f2122:Library/CurrentLayout.dwlt
+  controlID: 2090
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,11 +189,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-<<<<<<< HEAD:Joodle Dump/Library/CurrentLayout.dwlt
-  controlID: 94
-=======
-  controlID: 128
->>>>>>> efc386c9ef15ee2e63bd8bd924b6ea38653f2122:Library/CurrentLayout.dwlt
+  controlID: 2091
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,13 +235,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 636
     y: 0
-<<<<<<< HEAD:Joodle Dump/Library/CurrentLayout.dwlt
-    width: 660
-    height: 1068
-=======
     width: 378
     height: 623
->>>>>>> efc386c9ef15ee2e63bd8bd924b6ea38653f2122:Library/CurrentLayout.dwlt
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 16}
@@ -282,15 +261,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD:Joodle Dump/Library/CurrentLayout.dwlt
-    y: 1068
-    width: 1673
-    height: 239
-=======
     y: 623
     width: 1014
     height: 144
->>>>>>> efc386c9ef15ee2e63bd8bd924b6ea38653f2122:Library/CurrentLayout.dwlt
   m_MinSize: {x: 102, y: 124}
   m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 21}
@@ -323,11 +296,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-<<<<<<< HEAD:Joodle Dump/Library/CurrentLayout.dwlt
-  controlID: 60
-=======
-  controlID: 73
->>>>>>> efc386c9ef15ee2e63bd8bd924b6ea38653f2122:Library/CurrentLayout.dwlt
+  controlID: 1980
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,8 +316,8 @@ MonoBehaviour:
     y: 0
     width: 234
     height: 406
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -437,15 +406,15 @@ MonoBehaviour:
   m_MaximizeOnPlay: 1
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 0500000000000000000000000d000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -187
-    m_HBaseRangeMax: 187
+    m_HBaseRangeMin: -165
+    m_HBaseRangeMax: 165
     m_VBaseRangeMin: -293
     m_VBaseRangeMax: 293
     m_HAllowExceedBaseRangeMin: 1
@@ -486,7 +455,7 @@ MonoBehaviour:
   m_LastWindowPixelSize: {x: 374, y: 603}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000100000100
+  m_LowResolutionForAspectRatios: 01000001000100000100
   m_XRRenderMode: 0
 --- !u!114 &17
 MonoBehaviour:
@@ -511,13 +480,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-<<<<<<< HEAD:Joodle Dump/Library/CurrentLayout.dwlt
-    width: 1011
-    height: 1048
-=======
     width: 634
     height: 603
->>>>>>> efc386c9ef15ee2e63bd8bd924b6ea38653f2122:Library/CurrentLayout.dwlt
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 384012fe9fcc3c64c80900054bd2b1c3
   m_SceneLighting: 1
@@ -525,9 +489,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.033531304, y: 0.15088938, z: -9.857575}
+    m_Target: {x: -1.783896, y: 0.9156199, z: -9.875694}
     speed: 2
-    m_Value: {x: -0.033531304, y: 0.15088938, z: -9.857575}
+    m_Value: {x: -1.783896, y: 0.9156199, z: -9.875694}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -559,9 +523,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.7768273
+    m_Target: 9.569908
     speed: 2
-    m_Value: 7.7768273
+    m_Value: 9.569908
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -662,10 +626,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 712
-    y: 92
-    width: 485
-    height: 1046
+    x: 636
+    y: 73
+    width: 374
+    height: 603
   m_PersistentViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: 50
@@ -1079,14 +1043,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD:Joodle Dump/Library/CurrentLayout.dwlt
-      m_SelectedIDs: 2e280000
-      m_LastClickedID: 10286
-=======
       m_SelectedIDs: 
       m_LastClickedID: 0
->>>>>>> efc386c9ef15ee2e63bd8bd924b6ea38653f2122:Library/CurrentLayout.dwlt
-      m_ExpandedIDs: d4fbffff
+      m_ExpandedIDs: 60fbffffd4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1148,30 +1107,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: 16
-<<<<<<< HEAD:Joodle Dump/Library/CurrentLayout.dwlt
-  m_LastProjectPath: E:\Dateien\Tom\UnityProjects\JoodleDump\Joodle Dump
-=======
   m_LastProjectPath: C:\Users\sebak\OneDrive - iem.thm.de\Workspace\Projects\MiniGames\JoodleDump\JoodleDump
->>>>>>> efc386c9ef15ee2e63bd8bd924b6ea38653f2122:Library/CurrentLayout.dwlt
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD:Joodle Dump/Library/CurrentLayout.dwlt
-    m_SelectedIDs: f8250000
-    m_LastClickedID: 9720
-    m_ExpandedIDs: 00000000f825000000ca9a3b
-=======
-    m_SelectedIDs: fa250000
-    m_LastClickedID: 9722
+    m_SelectedIDs: d82c0000
+    m_LastClickedID: 11480
     m_ExpandedIDs: 00000000fa25000000ca9a3b
->>>>>>> efc386c9ef15ee2e63bd8bd924b6ea38653f2122:Library/CurrentLayout.dwlt
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1199,11 +1148,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD:Joodle Dump/Library/CurrentLayout.dwlt
-    m_ExpandedIDs: 00000000f8250000
-=======
-    m_ExpandedIDs: 00000000fa250000
->>>>>>> efc386c9ef15ee2e63bd8bd924b6ea38653f2122:Library/CurrentLayout.dwlt
+    m_ExpandedIDs: 00000000fa25000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
