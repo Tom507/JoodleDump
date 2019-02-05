@@ -16,7 +16,7 @@ public class PlatformGenerator : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0f)
         {
-            Instantiate(platform, new Vector3(Random.Range(-3f, 3), transform.position.y), Quaternion.identity);
+            Instantiate(platform, new Vector3(Random.Range(-3f, 3), transform.position.y, -2), Quaternion.identity);
 
             timer = platformSpawnTime;
         }
