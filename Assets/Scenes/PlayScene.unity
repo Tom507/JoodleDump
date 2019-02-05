@@ -266,6 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 425667110}
   - component: {fileID: 425667111}
+  - component: {fileID: 425667112}
   m_Layer: 0
   m_Name: PlatformGenerator
   m_TagString: Untagged
@@ -301,9 +302,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decayTime: 15
   spawnDistance: 2.8
-  lastPlatform: 0
+  spawnRange: 2
   platform: {fileID: 2667161765309979931, guid: 460edbdcc02b0074ca66a02391a628ff,
     type: 3}
+--- !u!114 &425667112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425667109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e858dad81dacf2e4783aae301f262164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  decayTime: 0
+  spawnDistance: 1
+  spawnRange: 2
+  spawnAmount: 2
+  randomAmount: 0
+  spawnObjects: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
