@@ -113,7 +113,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 498}
   m_MaxSize: {x: 22012, y: 14048}
   vertical: 0
-  controlID: 98
+  controlID: 110
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 498}
   m_MaxSize: {x: 22012, y: 14048}
   vertical: 0
-  controlID: 99
+  controlID: 111
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 348}
   m_MaxSize: {x: 8006, y: 8048}
   vertical: 1
-  controlID: 100
+  controlID: 112
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 101
+  controlID: 113
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 16
+  controlID: 45
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -560,7 +560,7 @@ MonoBehaviour:
     speed: 2
     m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.08717229, y: -0.89959055, z: 0.21045254, w: 0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1097,9 +1097,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0ee6ffff
-      m_LastClickedID: -6642
-      m_ExpandedIDs: 36f4ffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: d4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1161,20 +1161,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\Dateien\Tom\UnityProjects\JoodleDump
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f62f0000
-    m_LastClickedID: 12278
-    m_ExpandedIDs: 00000000a42d0000102e0000322e0000242f000000ca9a3b
+    m_SelectedIDs: 58260000
+    m_LastClickedID: 9816
+    m_ExpandedIDs: 0000000018260000c0260000f82600004428000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1202,7 +1202,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a42d0000102e0000322e0000242f0000
+    m_ExpandedIDs: 0000000018260000c0260000f826000044280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1233,18 +1233,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c62300001a2c0000942b000038270000063f0000862c0000622c00001e4000003c2c00001e2bfefffc2b0000da2b0000bc2c0000a02c00008227000002280000222b0000f62c0000063400001e2d0000d2830000e283000000000000362b0000582b000098390000e2510000202d00006c2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: PlatformGenerator
-      m_OriginalName: PlatformGenerator
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 9426
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 14}
     m_CreateAssetUtility:
