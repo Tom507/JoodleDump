@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\JoodlerMovement.cs" />
     <Compile Include="Assets\Scripts\JoodlerShooting.cs" />
     <Compile Include="Assets\Scripts\MenuManager.cs" />
+    <Compile Include="Assets\Scripts\Monster1.cs" />
     <Compile Include="Assets\Scripts\PlatformGenerator.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/sebak/OneDrive - iem.thm.de/Workspace/Projects/MiniGames/JoodleDump/JoodleDump/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

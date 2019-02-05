@@ -14,8 +14,13 @@ public class GameManager : MonoBehaviour
         if (joodler.transform.position.y + 6 < cam.transform.position.y)
         {
 
-            SceneManager.LoadScene("MainScene");
+            endGame();
 
         }
+    }
+
+    public void endGame()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 }
