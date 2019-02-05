@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //end game if player falls
-        if (joodler.transform.position.y + 5 < cam.transform.position.y)
+        if (joodler.transform.position.y + 6 < cam.transform.position.y)
         {
 
             SceneManager.LoadScene("MainScene");

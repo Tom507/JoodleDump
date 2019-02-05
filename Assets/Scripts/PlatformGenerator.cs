@@ -7,6 +7,8 @@ public class PlatformGenerator : MonoBehaviour
     float platformSpawnTime = 1f; //in secs
     float timer=0;
 
+    public float decayTime = 15;
+
     public GameObject platform;
     
     void Update()
@@ -16,7 +18,9 @@ public class PlatformGenerator : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0f)
         {
-            Instantiate(platform, new Vector3(Random.Range(-3f, 3), transform.position.y, -2), Quaternion.identity);
+            GameObject go = Instantiate(platform, new Vector3(Random.Range(-3f, 3), transform.position.y, 0), Quaternion.identity);
+
+            Destroy(go, decayTime);
 
             timer = platformSpawnTime;
         }
