@@ -18,6 +18,9 @@ public class JoodlerShooting : MonoBehaviour
     {
         //shooting
         shootingTimer -= Time.deltaTime;
+
+#if UNITY_EDITOR
+
         if (Input.GetMouseButtonDown(0) && !emptySlots())
         { 
             if (shootingTimer <= 0f)
@@ -48,6 +51,44 @@ public class JoodlerShooting : MonoBehaviour
                 shootingTimer = shootingCooldown;
             }
         }
+
+#elif UNITY_ANDROID
+
+        Touch[] myTouches = Input.touches;
+        for (int i = 0; i < Input.touchCount; i++)
+        {
+        
+            if (shootingTimer <= 0f && !emptySlots())
+            {
+                Vector3 shootingDir = myTouches[i].position;
+                shootingDir.z = 10;
+                shootingDir = Camera.main.ScreenToWorldPoint(shootingDir);
+                shootingDir = (shootingDir - transform.position).normalized;
+                //Debug.DrawRay(transform.position, shootingDir, Color.red); //testing
+
+                var f = Instantiate(footProjectile, transform.position, Quaternion.identity);
+
+                Rigidbody2D fRigidbody = f.GetComponent<Rigidbody2D>();
+
+                fRigidbody.AddForce(shootingDir * 500); //keep it this way, it does not work if you change 500 to a variable, dunno why
+
+                fRigidbody.angularVelocity = 3;
+
+                Destroy(f, 5);
+
+                if (fullSlots())
+                {
+                    refillingTimer = refillingCooldown;
+                }
+
+                disableLeg();
+                
+                shootingTimer = shootingCooldown;
+            }
+
+        }
+
+#endif
 
         //refilling
         refillingTimer -= Time.deltaTime;
