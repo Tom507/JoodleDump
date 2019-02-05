@@ -10,12 +10,18 @@ public class GameManager : MonoBehaviour
 
     public static float Score = 0;
 
+    Animator camAnim;
+
+    private void Start()
+    {
+        camAnim = Camera.main.GetComponent<Animator>();
+    }
+
     void Update()
     {
         if(joodler.transform.position.y > Score)
             Score = joodler.transform.position.y;
 
-        Debug.Log(Score);
 
         //end game if player falls
         if (joodler.transform.position.y + 6 < cam.transform.position.y)
@@ -28,6 +34,14 @@ public class GameManager : MonoBehaviour
 
     public void endGame()
     {
+        /*
+        joodler.GetComponent<JoodlerMovement>().enabled = false;
+        joodler.GetComponent<BoxCollider2D>().enabled = false;
+        joodler.transform.Find("ShootingPoint").GetComponent<JoodlerShooting>().enabled = false;
+
+        camAnim.SetBool("EndGame", true);
+        */
+
         SceneManager.LoadScene("MainScene");
     }
 }

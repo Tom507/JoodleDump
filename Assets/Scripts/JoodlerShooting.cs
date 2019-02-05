@@ -14,6 +14,14 @@ public class JoodlerShooting : MonoBehaviour
     float refillingCooldown = 3f;
     float refillingTimer = 0;
 
+    AudioSource audiosource;
+    public AudioClip[] shootSounds;
+
+    private void Start()
+    {
+        audiosource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         //shooting
@@ -47,7 +55,10 @@ public class JoodlerShooting : MonoBehaviour
                 }
 
                 disableLeg();
-                
+
+                audiosource.clip = shootSounds[Random.Range(0, shootSounds.Length)];
+                audiosource.Play();
+
                 shootingTimer = shootingCooldown;
             }
         }
@@ -82,6 +93,9 @@ public class JoodlerShooting : MonoBehaviour
                 }
 
                 disableLeg();
+
+                audiosource.clip = jumpSounds[Random.Range(0, jumpSounds.Length)];
+                audiosource.Play();
                 
                 shootingTimer = shootingCooldown;
             }

@@ -10,7 +10,7 @@ public class BackgroundDecorations : MonoBehaviour
     public GameObject deco;
     public Sprite[] sprites;
 
-    public float spawnDistance = 10;
+    public float spawnDistance = 15;
     public float randRange = 5;
     private float rand = 0;
     private float lastSpawn = 0;
@@ -34,16 +34,16 @@ public class BackgroundDecorations : MonoBehaviour
     {
         for (int i = 0; i < n; i++)
         {
-            var d = Instantiate(deco, new Vector3(Random.Range(-10f, 10f), transform.position.y, Random.Range(10, 20)), Quaternion.identity);
+            var d = Instantiate(deco, new Vector3(Random.Range(-9f, 9f), transform.position.y, Random.Range(10, 35)), Quaternion.identity);
 
             d.transform.Rotate(new Vector3(0, 0, Random.Range(0, 360)));
 
             d.GetComponent<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Length)];
 
-            float size = Random.Range(1f, 3f);
+            float size = Random.Range(1f, 5f);
             d.transform.localScale = new Vector3(size, size);
 
-            Destroy(d, 25);
+            Destroy(d, 35);
         }
     }
 }
