@@ -300,6 +300,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   decayTime: 15
+  spawnDistance: 2.8
+  lastPlatform: 0
   platform: {fileID: 2667161765309979931, guid: 460edbdcc02b0074ca66a02391a628ff,
     type: 3}
 --- !u!1 &519420028
@@ -566,6 +568,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4e49d3f4a2b3b1b49b6e4f766fd1fb28, type: 3}
   - {fileID: 21300000, guid: cb2e0d76979bf2046ac6f3cfd4f6ddb6, type: 3}
   - {fileID: 21300000, guid: b138b1faed4b6e54b8b00c11faf583ec, type: 3}
+  spawnDistance: 10
+  randRange: 5
 --- !u!1001 &1279424754
 PrefabInstance:
   m_ObjectHideFlags: 0
