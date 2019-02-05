@@ -26,6 +26,15 @@ public class JoodlerMovement : MonoBehaviour
 
     void Update()
     {
+        //flipping
+        if (Input.GetAxis("Horizontal") > 0 || Input.acceleration.x > 0)
+        {
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
+        }
+        else if (Input.GetAxis("Horizontal") < 0 || Input.acceleration.x < 0)
+        {
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y);
+        }
 
         //tilting
 #if UNITY_EDITOR
