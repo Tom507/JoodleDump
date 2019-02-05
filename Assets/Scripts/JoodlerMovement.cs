@@ -27,14 +27,24 @@ public class JoodlerMovement : MonoBehaviour
     void Update()
     {
         //flipping
-        if (Input.GetAxis("Horizontal") > 0 || Input.acceleration.x > 0)
+#if UNITY_EDITOR
+        if (Input.GetAxis("Horizontal") > 0)
         {
             transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
         }
-        else if (Input.GetAxis("Horizontal") < 0 || Input.acceleration.x < 0)
+        else if (Input.GetAxis("Horizontal") < 0)
         {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y);
         }
+#elif UNITY_ANDROID
+        if (Input.acceleration.x > 0)
+        {
+            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
+        }
+        else if (Input.acceleration.x < 0)
+        {
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y);
+#endif
 
         //tilting
 #if UNITY_EDITOR
@@ -46,7 +56,7 @@ public class JoodlerMovement : MonoBehaviour
         
         transform.Translate(Input.acceleration.x, 0, 0);
 
-#endif     
+#endif
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -60,6 +70,7 @@ public class JoodlerMovement : MonoBehaviour
             rb.velocity = velocity;
 
             anim.SetTrigger("jump");
+
             audiosource.clip = jumpSounds[Random.Range(0, jumpSounds.Length)];
             audiosource.Play();
         }

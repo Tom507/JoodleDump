@@ -7,7 +7,9 @@ public class Spawner : MonoBehaviour
     public float decayTime = 0;
 
     public float spawnDistance = 1;
-    public float spawnRange = 2;
+    public float randomDistance = 2;
+
+    public float spawnRangeX = 3;
 
     public int spawnAmount = 2;
     public bool randomAmount = false;
@@ -30,7 +32,7 @@ public class Spawner : MonoBehaviour
             spawn(Mathf.FloorToInt(amount), spawnObjects[Mathf.FloorToInt(Random.Range(0, spawnObjects.Count))], decayTime);
 
             lastSpawn = GameManager.Score;
-            rand = Random.Range(-(spawnRange / 2), (spawnRange / 2));
+            rand = Random.Range(-(randomDistance / 2), (randomDistance / 2));
         }
     }
 
@@ -38,7 +40,7 @@ public class Spawner : MonoBehaviour
     {
         for (int i = 0; i < amount; i++)
         {
-            GameObject go = Instantiate(objToSpawn, new Vector3(Random.Range(-3f, 3), transform.position.y, 0), Quaternion.identity);
+            GameObject go = Instantiate(objToSpawn, new Vector3(Random.Range(-spawnRangeX, spawnRangeX), transform.position.y, 0), Quaternion.identity);
             Destroy(go, decayTime);
         }
     }
