@@ -94,7 +94,7 @@ public class JoodlerShooting : MonoBehaviour
 
                 disableLeg();
 
-                audiosource.clip = jumpSounds[Random.Range(0, jumpSounds.Length)];
+                audiosource.clip = shootSounds[Random.Range(0, shootSounds.Length)];
                 audiosource.Play();
                 
                 shootingTimer = shootingCooldown;

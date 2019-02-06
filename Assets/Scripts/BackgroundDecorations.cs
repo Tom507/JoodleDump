@@ -15,15 +15,19 @@ public class BackgroundDecorations : MonoBehaviour
     private float rand = 0;
     private float lastSpawn = 0;
 
+    float score;
+
+
+
     void Update()
     {
-
-        if (lastSpawn + spawnDistance + rand <= GameManager.Score)
+        score = GameObject.Find("GameManager").GetComponent<GameManager>().score;
+        if (lastSpawn + spawnDistance + rand <= score)
         {
 
             spawn(1);
 
-            lastSpawn = GameManager.Score;
+            lastSpawn = score;
             rand = Random.Range(-(randRange/2), (randRange / 2));
         }
 
