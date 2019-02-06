@@ -23,12 +23,14 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
-        score = GameObject.Find("GameManager").GetComponent<GameManager>().score;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        score = GameObject.Find("GameManager").GetComponent<GameManager>().score;
+
         if (lastSpawn + spawnDistance + rand <= score && spawnObjects.Count > 0)
         {
             var amount = spawnAmount;

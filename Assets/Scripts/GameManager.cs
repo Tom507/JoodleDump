@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         joodler.transform.Find("ShootingPoint").GetComponent<JoodlerShooting>().enabled = false;
+        joodler.GetComponent<JoodlerMovement>().enabled = false;
         Time.timeScale = 0;
 
         camAnim = Camera.main.GetComponent<Animator>();
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
     public void continueGame()
     {
         joodler.transform.Find("ShootingPoint").GetComponent<JoodlerShooting>().enabled = true;
+        joodler.GetComponent<JoodlerMovement>().enabled = true;
 
         pauseBtn.gameObject.SetActive(true);
         continueBtn.gameObject.SetActive(false);
@@ -42,6 +44,7 @@ public class GameManager : MonoBehaviour
     public void stopGame()
     {
         joodler.transform.Find("ShootingPoint").GetComponent<JoodlerShooting>().enabled = false;
+        joodler.GetComponent<JoodlerMovement>().enabled = false;
 
         pauseBtn.gameObject.SetActive(false);
         continueBtn.gameObject.SetActive(true);

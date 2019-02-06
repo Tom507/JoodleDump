@@ -17,14 +17,11 @@ public class BackgroundDecorations : MonoBehaviour
 
     float score;
 
-    private void Start()
-    {
-        score = GameObject.Find("GameManager").GetComponent<GameManager>().score;
-    }
+
 
     void Update()
     {
-
+        score = GameObject.Find("GameManager").GetComponent<GameManager>().score;
         if (lastSpawn + spawnDistance + rand <= score)
         {
 

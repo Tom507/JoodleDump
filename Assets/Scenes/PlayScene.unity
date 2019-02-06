@@ -483,7 +483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decayTime: 15
   spawnDistance: 2.5
-  randomDistance: 1
+  randomDistance: 2
   spawnRangeX: 3
   spawnAmount: 3
   randomAmount: 1
@@ -833,6 +833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 519420028}
   joodler: {fileID: 1678282335}
+  score: 0
   restartBtn: {fileID: 1672906674}
   pauseBtn: {fileID: 785633139}
   continueBtn: {fileID: 1380631704}
