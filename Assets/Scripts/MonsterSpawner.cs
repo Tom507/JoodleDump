@@ -17,19 +17,15 @@ public class MonsterSpawner : MonoBehaviour
 
     public List<GameObject> spawnObjects = new List<GameObject>();
 
-    float score;
-
-
     // Update is called once per frame
     void Update()
     {
-        score = GameObject.Find("GameManager").GetComponent<GameManager>().score;
-        if (lastSpawn + spawnDistance + rand <= score && spawnObjects.Count > 0)
+        if (lastSpawn + spawnDistance + rand <= GameManager.Score && spawnObjects.Count > 0)
         {
 
             spawn(Mathf.FloorToInt(Random.Range(1, spawnamount + 1)), spawnObjects[Mathf.FloorToInt( Random.Range(0, spawnObjects.Count))], decayTime);
 
-            lastSpawn = score;
+            lastSpawn = GameManager.Score;
             rand = Random.Range(-(spawnRange / 2), (spawnRange / 2));
         }
     }

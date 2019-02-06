@@ -16,22 +16,15 @@ public class PlatformGenerator : MonoBehaviour
     private float rand = 0;
 
     public GameObject platform;
-
-    float score;
-
-    private void Start()
-    {
-        score = GameObject.Find("GameManager").GetComponent<GameManager>().score;
-    }
-
+    
     void Update()
     {
-        if (lastPlatform + spawnDistance + rand <= score)
+        if (lastPlatform + spawnDistance + rand <= GameManager.Score)
         {
 
             spawn(Mathf.FloorToInt( Random.Range(1, 4)), platform);
 
-            lastPlatform = score;
+            lastPlatform = GameManager.Score;
             rand = Random.Range(-(spawnRange/2), (spawnRange/2));
         }
     }

@@ -1,7 +1,8 @@
 Android
 PlayerPath?
-C:/Users/sebak/OneDrive - iem.thm.de/Workspace/Projects/MiniGames/JoodleDump/JoodleDump/Build/JoodleDump_1.1.apk
+C:/Users/sebak/OneDrive - iem.thm.de/Workspace/Projects/MiniGames/JoodleDump/JoodleDump/Build/JoodleDump.apk
 SceneListBegin?
+Assets/Scenes/MainScene.unity
 Assets/Scenes/PlayScene.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -84,8 +85,6 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-6abf73a696a0787613a14f23444d25ca Assembly-CSharp.dll:.Monster
-81a19fb0b012b38d1a14a6e01f7b9a3e Assembly-CSharp.dll:.MonsterSpawner
 832702ee0652c4fa99afae5398adb4ca Assembly-CSharp.dll:.FollowPlayer
 385e2b8c7c30efde8d9ab4a77bb5dec9 Assembly-CSharp.dll:.JoodlerMovement
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -116,15 +115,15 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Platform
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
-a85dce51f4bfcd3222168f41eef77f29 Assembly-CSharp.dll:.GameManager
+57aaa0dfb2982de5f82e8e33038f854e Assembly-CSharp.dll:.GameManager
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
-55121b95f461f503aece21e7856cb760 Assembly-CSharp.dll:.Spawner
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 1dcb82730d983b77cec736c6ef19f814 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -151,7 +150,7 @@ cf96e5f7b3d069bab453925bd41be04e UnityEngine.TestRunner.dll:UnityEngine.TestTool
 fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
-4be3314860ce508a123329ddc756bf74 Assembly-CSharp.dll:.PlatformGenerator
+8b70377f50ca346c2220db2b3ed1a706 Assembly-CSharp.dll:.PlatformGenerator
 931f489e44eadf809e9310429c99dde5 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
@@ -161,9 +160,8 @@ a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MenuManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.BackgroundMusic
-3b109984bb36219e2d470d08af4ed725 Assembly-CSharp.dll:.JoodlerShooting
-a04c7642e1ac77c639637b9fbc693fe9 Assembly-CSharp.dll:.BackgroundDecorations
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+4cb933605a94c37cd46336177dc718b8 Assembly-CSharp.dll:.BackgroundDecorations

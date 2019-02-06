@@ -19,19 +19,10 @@ public class Spawner : MonoBehaviour
 
     public List<GameObject> spawnObjects = new List<GameObject>();
 
-    float score;
-
-    private void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        score = GameObject.Find("GameManager").GetComponent<GameManager>().score;
-
-        if (lastSpawn + spawnDistance + rand <= score && spawnObjects.Count > 0)
+        if (lastSpawn + spawnDistance + rand <= GameManager.Score && spawnObjects.Count > 0)
         {
             var amount = spawnAmount;
 
@@ -40,7 +31,7 @@ public class Spawner : MonoBehaviour
 
             spawn(Mathf.FloorToInt(amount), spawnObjects[Mathf.FloorToInt(Random.Range(0, spawnObjects.Count))], decayTime);
 
-            lastSpawn = score;
+            lastSpawn = GameManager.Score;
             rand = Random.Range(-(randomDistance / 2), (randomDistance / 2));
         }
     }

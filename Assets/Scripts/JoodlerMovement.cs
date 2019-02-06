@@ -44,18 +44,17 @@ public class JoodlerMovement : MonoBehaviour
         else if (Input.acceleration.x < 0)
         {
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y);
-        }
 #endif
 
         //tilting
 #if UNITY_EDITOR
 
-        var move = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+        var move = new Vector3(Input.GetAxis("Horizontal"),0,0);
         transform.position += move * 5 * Time.deltaTime;
 
 #elif UNITY_ANDROID
         
-        transform.Translate(Input.acceleration.x * .3f, 0, 0);
+        transform.Translate(Input.acceleration.x, 0, 0);
 
 #endif
     }
